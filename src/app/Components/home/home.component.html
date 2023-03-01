@@ -10,24 +10,19 @@
             <div class="col-md-12">
                 <section class="upload-section">
 
-                            <!-- <div class="col-md-6">
-                                <label for="">Select file to upload</label>
-                            </div> -->
-
-                            <div class="col-md-6 upload-files">
+                    <div class="col-md-6">
                                 <!-- <span>{{source1_name}}</span> -->
-                                <input type="file" class="file-in" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" (change) = "source1($event)">
-                                <button mat-raised-button color="primary">Upload</button>
+                        <div class="col-md-12 upload-files">
+                            <input type="file" class="file-in" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" (change) = "source1($event)">
+                            <button mat-raised-button color="primary" (click)="onUpload()">Upload</button>
+                        </div>
+                            <div class="col-md-12">
+                                <a class="link" (click)="source1tf()">Add another source</a>
                             </div>
+
+                    </div>
         
-                    
-                    <!-- <div *ngIf="upload_source2" class="col-md-6">
-                        <label for="">Select file to upload</label>
-                    </div> -->
-
                     <div *ngIf="upload_source2" class="upload-files col-md-6">
-
-                        <!-- <span>{{source2_name}}</span> -->
                         <input type="file" class="file-in" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
                         <button mat-raised-button color="primary" (click)="source2()">Upload</button>
                     </div>
@@ -43,14 +38,14 @@
                         <mat-panel-title>
                             Data Sources
                         </mat-panel-title>
-                        <mat-panel-description>
+                        <!-- <mat-panel-description>
                         {{panelOpenState ? 'Hide' : 'Show'}}
-                        </mat-panel-description>
+                        </mat-panel-description> -->
                       </mat-expansion-panel-header>
                       <mat-tab-group>
 
-                        <mat-tab label="First"> Content 1 
-
+                        <mat-tab label="First"> 
+                            <app-table [dataSource]="dataSource" [headers]="headers" [totalRows] = "totalRows" [data]="finalData"></app-table>
                         </mat-tab>
 
                         <mat-tab label="Second"> Content 2 
@@ -62,6 +57,54 @@
                   </mat-accordion>      
             </div>
 
+            <div class="col-md-12">
+                <br>
+            </div>
+
+            <div class="col-md-12">
+                <mat-accordion>
+                  <mat-expansion-panel (opened)="panelOpenState = true"
+                                       (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                          Data Analysis
+                      </mat-panel-title>
+                      
+                    </mat-expansion-panel-header>
+                    <div class="col-md-12">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Actions</mat-label>
+                            <mat-select>
+                              <mat-option *ngFor="let action of actions" [value]="action.value">
+                                {{action.viewValue}}
+                              </mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                    </div>
+                  </mat-expansion-panel>
+                </mat-accordion>      
+            </div>
+
+            <div class="col-md-12">
+                <br>
+            </div>
+
+            <div class="col-md-12">
+                <mat-accordion>
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Data Visualization
+                    </mat-panel-title>
+                    <!-- <mat-panel-description>
+                    {{panelOpenState ? 'Hide' : 'Show'}}
+                    </mat-panel-description> -->
+                    </mat-expansion-panel-header>
+                    
+                </mat-expansion-panel>
+                </mat-accordion>      
+            </div>
 
 
         </div>

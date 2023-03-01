@@ -1,0 +1,1 @@
+export const GLOBAL_URL='https://faa5-103-94-57-225.in.ngrok.io/';

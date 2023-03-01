@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input ,Output,EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-table',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent {
+
+  @Input() dataSource!:any;
+  @Input() headers!:any;
+  @Input() totalRows!: any;
+  @Input() data!: any;
+  @Output() nextPage: EventEmitter<any> = new  EventEmitter();
 
 }

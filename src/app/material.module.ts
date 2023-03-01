@@ -15,16 +15,20 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatExpansionModule} from '@angular/material/expansion'; 
 import {MatTableModule} from '@angular/material/table'; 
 import {MatPaginatorModule} from '@angular/material/paginator'; 
+import {MatMenuModule} from '@angular/material/menu';
+import {MatSelectModule} from '@angular/material/select';
+
+
 
 @NgModule({
     imports: [MatNativeDateModule,MatDatepickerModule,MatIconModule,MatButtonModule,MatCheckboxModule, MatToolbarModule,FormsModule, MatCardModule,
         MatFormFieldModule,MatInputModule,MatListModule,MatRadioModule,MatTabsModule,MatExpansionModule,
-        MatTableModule,MatPaginatorModule,
+        MatTableModule,MatPaginatorModule,MatMenuModule,MatSelectModule,
     ],
     exports: [MatNativeDateModule,FormsModule,
     MatDatepickerModule,MatIconModule,MatButtonModule,MatCheckboxModule, MatToolbarModule, MatCardModule,MatFormFieldModule,
     MatInputModule,MatListModule,MatRadioModule,MatTabsModule,MatExpansionModule,MatTableModule,
-    MatPaginatorModule,
+    MatPaginatorModule,MatMenuModule,MatSelectModule,
     ],
     })
     
