@@ -1,0 +1,10 @@
+.upload-section{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.upload-files{
+    display: flex;
+    align-items: baseline;
+}
+

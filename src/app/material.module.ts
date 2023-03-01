@@ -11,12 +11,21 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatListModule} from '@angular/material/list';
-
+import {MatTabsModule} from '@angular/material/tabs'; 
+import {MatExpansionModule} from '@angular/material/expansion'; 
+import {MatTableModule} from '@angular/material/table'; 
+import {MatPaginatorModule} from '@angular/material/paginator'; 
 
 @NgModule({
-    imports: [MatNativeDateModule,MatDatepickerModule,MatIconModule,MatButtonModule,MatCheckboxModule, MatToolbarModule,FormsModule, MatCardModule,MatFormFieldModule,MatInputModule,MatListModule,MatRadioModule,],
+    imports: [MatNativeDateModule,MatDatepickerModule,MatIconModule,MatButtonModule,MatCheckboxModule, MatToolbarModule,FormsModule, MatCardModule,
+        MatFormFieldModule,MatInputModule,MatListModule,MatRadioModule,MatTabsModule,MatExpansionModule,
+        MatTableModule,MatPaginatorModule,
+    ],
     exports: [MatNativeDateModule,FormsModule,
-    MatDatepickerModule,MatIconModule,MatButtonModule,MatCheckboxModule, MatToolbarModule, MatCardModule,MatFormFieldModule,MatInputModule,MatListModule,MatRadioModule,],
+    MatDatepickerModule,MatIconModule,MatButtonModule,MatCheckboxModule, MatToolbarModule, MatCardModule,MatFormFieldModule,
+    MatInputModule,MatListModule,MatRadioModule,MatTabsModule,MatExpansionModule,MatTableModule,
+    MatPaginatorModule,
+    ],
     })
     
 export  class  MyMaterialModule { }

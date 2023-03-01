@@ -1,0 +1,73 @@
+<!-- <button type="button" (click)="addNewGraph()">Add Graph</button>
+<p>{{no_of_Graphs}}</p> -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="col-md-12">
+                <h2 class="heading">Upload Files Here</h2>
+            </div>
+
+            <div class="col-md-12">
+                <section class="upload-section">
+
+                            <!-- <div class="col-md-6">
+                                <label for="">Select file to upload</label>
+                            </div> -->
+
+                            <div class="col-md-6 upload-files">
+                                <!-- <span>{{source1_name}}</span> -->
+                                <input type="file" class="file-in" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" (change) = "source1($event)">
+                                <button mat-raised-button color="primary">Upload</button>
+                            </div>
+        
+                    
+                    <!-- <div *ngIf="upload_source2" class="col-md-6">
+                        <label for="">Select file to upload</label>
+                    </div> -->
+
+                    <div *ngIf="upload_source2" class="upload-files col-md-6">
+
+                        <!-- <span>{{source2_name}}</span> -->
+                        <input type="file" class="file-in" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+                        <button mat-raised-button color="primary" (click)="source2()">Upload</button>
+                    </div>
+
+                </section>
+            </div>
+
+            <div class="col-md-12">
+                  <mat-accordion>
+                    <mat-expansion-panel (opened)="panelOpenState = true"
+                                         (closed)="panelOpenState = false">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Data Sources
+                        </mat-panel-title>
+                        <mat-panel-description>
+                        {{panelOpenState ? 'Hide' : 'Show'}}
+                        </mat-panel-description>
+                      </mat-expansion-panel-header>
+                      <mat-tab-group>
+
+                        <mat-tab label="First"> Content 1 
+
+                        </mat-tab>
+
+                        <mat-tab label="Second"> Content 2 
+
+                        </mat-tab>
+
+                      </mat-tab-group>
+                    </mat-expansion-panel>
+                  </mat-accordion>      
+            </div>
+
+
+
+        </div>
+
+        <div class="col-md-3">
+            <h1>CSVs</h1>
+        </div>
+    </div>
+</div>

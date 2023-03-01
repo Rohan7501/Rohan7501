@@ -83,8 +83,8 @@ h1{
 }
 
 .sign-in-form{
-    height: 542px;
-    padding: 150px 0px 150px 30px;
+    height: 480px;
+    padding: 105px 0px 105px 30px;
 
     /* justify-content: center; */
     /* align-items: center;
@@ -104,7 +104,7 @@ h1{
 }
  
 .back{
-    height:542px;
+    height:480px;
     background-image: url("../../../assets/5.jpg");
     background-size: cover;
     background-repeat: no-repeat;

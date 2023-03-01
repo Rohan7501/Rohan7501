@@ -11,18 +11,25 @@ import { MyMaterialModule } from  './material.module';
 import { RouterModule, Routes } from '@angular/router';
 import { RegistrationComponentComponent } from './Components/registration-component/registration-component.component';
 import { LoginComponentComponent } from './Components/login-component/login-component.component';
+import { HomeComponent } from './Components/home/home.component';
+import { TableComponent } from './Components/table/table.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistrationComponentComponent,
-    LoginComponentComponent
+    LoginComponentComponent,
+    HomeComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MyMaterialModule,
+    HttpClientModule
     // RouterModule.forRoot([
     //   { path: '', redirectTo: '/', pathMatch: 'full' },
     //   { path: 'register', component: RegistrationComponentComponent },
