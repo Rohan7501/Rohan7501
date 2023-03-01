@@ -1,0 +1,135 @@
+/* .main{
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../assets/9.jpg");
+  background-size: cover;
+  background-position-y:bottom ;
+  display: flex;
+  align-items: center;
+}
+
+.container{ 
+  width: 55%;
+  height: 55%;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 5px 12px 30px gray ;
+  
+}
+
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 20px;
+  }
+
+
+.sign-in-form{
+  height: 542px;
+  padding: 150px 0px 150px 30px;
+
+
+}
+
+.space{
+  padding: 10px 0;
+}
+
+.space input{
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  padding-left:5px ;
+}
+
+.back{
+  height:542px;
+  background-image: url("../../../assets/5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px 0px 0px 30px;
+
+} */
+
+
+
+
+*{
+  padding:0 ;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 600;
+  /* letter-spacing: 1px; */
+}
+
+/* main-card{
+  height: 542px;
+} */
+.container{
+  margin: 20px auto;
+  background-color: rgb(231, 231, 238);
+  border-radius: 30px;
+  box-shadow: 5px 12px 30px gray ;
+  
+  
+}
+
+.sign-in-form{
+  height: 542px;
+  padding: 150px 0px 150px 30px;
+
+  /* justify-content: center; */
+  /* align-items: center;
+  display: flex; */
+}
+
+.space{
+  padding: 10px 0;
+}
+
+.space input{
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  /* letter-spacing: 1px; */
+  padding-left:5px ;
+}
+
+.back{
+  height:542px;
+  background-image: url("../../../assets/5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px 0px 0px 30px;
+
+}
+
+.btn1{
+  padding: 10px 40px;
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.btn1 :hover{
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+

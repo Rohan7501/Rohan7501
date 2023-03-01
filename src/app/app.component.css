@@ -1,0 +1,19 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.spacer {
+    flex: 1 1 auto;
+  }
+
+  
+.Mons {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Rob{
+  font-family: 'Roboto Slab', serif;
+}
+
+.home{
+  color: white;
+  
+}

@@ -1,0 +1,146 @@
+/* .label{
+    display:block;
+}
+
+.form{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+
+.Mons {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .Rob{
+    font-family: 'Roboto Slab', serif;
+  }
+
+mat-label{
+    font-family: 'Montserrat', sans-serif; 
+}
+.login-card{
+    display: flex;
+    flex-wrap: nowrap;
+    
+
+}
+
+.main{
+
+}
+
+.datalog{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+}
+
+.imgrep{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.dataimg{
+    flex:2;
+    max-width: 500px;
+    max-height: 400px;
+} */
+
+*{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+    /* letter-spacing: 1px; */
+}
+
+/* main-card{
+    height: 542px;
+} */
+.container{
+    margin: 20px auto;
+    background-color: rgb(231, 231, 238);
+    border-radius: 30px;
+    box-shadow: 5px 12px 30px gray ;
+    
+    
+}
+
+.sign-in-form{
+    height: 542px;
+    padding: 150px 0px 150px 30px;
+
+    /* justify-content: center; */
+    /* align-items: center;
+    display: flex; */
+}
+
+.space{
+    padding: 10px 0;
+}
+
+.space input{
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    /* letter-spacing: 1px; */
+    padding-left:5px ;
+}
+ 
+.back{
+    height:542px;
+    background-image: url("../../../assets/5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px 0px 0px 30px;
+
+}
+
+.btn1{
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.btn1 :hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+/* .Form {
+    margin: 0 auto;
+    max-width: 800px;
+    max-height: 750px;
+    background-color: rgb(236, 233, 233);
+    border-radius: 30px;
+} */
+
+/* .login-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+} */
