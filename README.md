@@ -29,7 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 -->
 # Hi, I'm Rohan 👋
 
-MS Computer Science student at Rochester Institute of Technology (graduating May 2026), focused on computer vision, and ML infrastructure.
+MS Computer Science - Rochester Institute of Technology graduate, focused on computer vision, and ML infrastructure.
 
 I like building things that run fast and stay up — low-latency inference pipelines, multi-threaded C++ services, and the observability to prove they work.
 
