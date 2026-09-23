@@ -39,7 +39,7 @@ I like building things that run fast and stay up — low-latency inference pipel
 
 ## Tech I work with
 
-**Languages:** C++17 · Python · SQL · Java · C#
+**Languages:** C++ · Python · SQL · C#
 **ML:** PyTorch · TensorFlow · TensorRT · ONNX · OpenCV
 **Systems:** Linux · Docker · Kubernetes · gRPC/Protobuf · systemd · Prometheus · CI/CD
 
